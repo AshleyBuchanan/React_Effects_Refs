@@ -25,7 +25,6 @@ function App() {
 
     const toggleAutoDraw = () => {
         setAutoDraw(auto => !auto);
-        console.log(autoDraw)
     }
 
     const fetchNewDeck = async () => {
@@ -36,7 +35,7 @@ function App() {
             //console.log('New deck_id:', response.data.deck_id);
             setDrawnCards([]);
         } catch(error) {
-            console.log('Error fetching deck:', error);
+            alert('Error fetching deck:', error);
         } finally {
             setIsShuffling(false);
             setReset(false);
@@ -62,7 +61,7 @@ function App() {
                 setDrawnCards(cards => [...cards, response.data.cards[0]]);
             }
         } catch(error) {
-            console.log('Error fetching card:', error);
+            alert('Error fetching card:', error);
         } finally {
             setIsDrawing(false);
         }
