@@ -1,0 +1,24 @@
+* {
+    /* border: 2px solid white; */
+    color: white;
+}
+
+body {
+    background-color: hsl(120, 65%, 35%);
+}
+
+#root {
+    width: 1280px;
+    height: 1280px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    transition: transform 0.5s ease;
+}

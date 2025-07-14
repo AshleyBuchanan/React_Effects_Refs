@@ -1,0 +1,8 @@
+.cardHolder {
+    flex: 0 0 800px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
